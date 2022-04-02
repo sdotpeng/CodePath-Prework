@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hello Website (blank)
 
 This is a basic static HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. The rest is up to you and your imagination.
@@ -20,3 +21,7 @@ This is a basic static HTML starter project you can build on however you like. N
 
 - Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
 - Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+=======
+# CodePath-Prework
+CodePath SITE 2022 Prework 
+>>>>>>> parent of c6096a7 (Update gif files)
