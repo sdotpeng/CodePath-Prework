@@ -4,7 +4,7 @@
 
 Submitted by: **Siyuan Peng**
 
-Time spent: **5** hours spent in total
+Time spent: **8** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/chipped-salty-calliandra
 
@@ -25,8 +25,8 @@ The following **optional** features are implemented:
 * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [x] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [x] More than 4 functional game buttons
-* [ ] Playback speeds up on each turn
-* [ ] Computer picks a different pattern each time the game is played
+* [x] Playback speeds up on each turn
+* [x] Computer picks a different pattern each time the game is played
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
 * [x] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
@@ -35,7 +35,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] List anything else that you can get done to improve the app!
-- [x] Count the number of mistakes user has made, and return to 0 when game is restarted 
+- [x] Count the number of mistakes user has made, and reset to 0 when game is restarted 
 
 ## Video Walkthrough (GIF)
 
@@ -48,6 +48,9 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 3. This gif verifies that the game is restarted to initial state when user presses stop and start at any time. As we can see, the game starts again from the first button when user presses stop and start button during the game. 
 ![](Restart.gif)
+
+1. I added two more features as the final stage of my project. This gif is a good demonstration. Now, the pattern is randomized everytime when user starts the game. The game also gets speeded up sequentially, the closer the user is close to victory, the faster the buttons are played. As you can see from the gif, the first few start-stop showed different beginning pattern, and when I settled down with the last trial, as game moved forward, you can see the game speed got faster. (Note: these two features were added after the time when above three gifs were made).
+![](RandomFaster.gif)
 
 
 ## Reflection Questions
@@ -68,7 +71,7 @@ Although having heard a lot, this was my first time that I actually used HTML to
     * How does the webpage store and present customized data tailored for different users? Many websites are not static which only show static information. Instead, they can show different information from different users on the same website. I wonder how JavaScript retrieves data from server's database and how it parses and controls the content and style to present different information.
     * I want to know how industrial level website is designed. Do they write CSS and HTML from scratch? Is there any faster way to design advanced website like Youtube?
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
-First, I want to add more features to it. Specifically, I want to add "Computer picks a different pattern each time the game is played" feature because that gives more entertainment because player has to follow different patterns everytime instead of memorizing the same pattern each time they plan. I thought about using random but I didn't have time to learn and test random related code in JavaScript. I also want to add the feature of "Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)" because this also gives more entertainment. I thought about using a list like structure containing multiple pitches as the value of different button. In this way, whenever a button is pressed, a list of pitches will be played.
+First, I want to add more features to it. Specifically, I want to add the feature of "Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)" because this also gives more entertainment. I thought about using a list like structure containing multiple pitches as the value of different button. In this way, whenever a button is pressed, a list of pitches will be played. I also want to add the feature of timer. I feel like user will have more fun in playing because it increases the difficulty. I would definitely implement this feature if I have time.
 Second, I want to refactor my guess function because it has some duplicate codes that may be removed after more time of inspection. For example, ``progress++;playClueSequence();`` showed up twice in some nested conditionals. From my experience in Python and Java programming, I think refactoring can be made to remove duplicate and increase readability.
 
 
