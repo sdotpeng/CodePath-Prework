@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Siyuan Peng's Light and Sound Memory Game</h1>
+    <p>Welcome to the game! Follow and repeat the pattern of light and sound to get to your victory! Have fun!</p>
+    <button onclick="startGame()" class="control" id="startBtn">Start</button>
+    <button onclick="stopGame()" id="stopBtn" class="control hidden">Stop</button>
+
+    <div id="gameButtonArea">
+      <button
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        id="button1"
+      ></button>
+      <button
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        id="button2"
+      ></button>
+      <button
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        id="button3"
+      ></button>
+      <button
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        id="button4"
+      ></button>
+      <button
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+        id="button5"
+      ></button>
+    </div>
+    <p id="mistake">
+      Mistake: 0
+    </p>
+  </body>
+</html>
